@@ -15,6 +15,18 @@
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/monokai.css" />
+    <style>
+      .reveal table {
+        font-size: 2.1rem;
+      }
+      .visually-hidden {
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+      }
+    </style>
 
     <!-- Printing and PDF exports -->
     <script>
@@ -47,9 +59,9 @@
                 alt=""
               />
               <ul style="align-self: center;">
-                <li>Front End Web Developer</li>
-                <li>Accessibility Blogger</li>
-                <li>Craft Beer Lover</li>
+                <li class="fragment fade-down">Front End Web Developer</li>
+                <li class="fragment fade-down">Accessibility Blogger</li>
+                <li class="fragment fade-down">Craft Beer Lover</li>
               </ul>
             </div>
           </section>
@@ -62,13 +74,32 @@
           <section>
             <p>Spotify gives people joy for free or low cost.</p>
           </section>
+          <section>
+            <p>Why do I care?</p>
+          </section>
         </section>
         <section>
           <section>
             <h2>The great divide</h2>
           </section>
           <section>
-            <img src="img/the-great-divide.png" alt="" />
+            <img
+              src="img/the-great-divide.png"
+              alt="The Great Divide by Chris Coyier"
+            />
+          </section>
+          <section>
+            <figure>
+              <img src="img/sides.png" alt="" />
+              <figcaption class="visually-hidden">
+                On one side, an army of developers whose interests,
+                responsibilities, and skill sets are heavily revolved around
+                JavaScript. On the other, an army of developers whose interests,
+                responsibilities, and skill sets are focused on other areas of
+                the front end, like HTML, CSS, design, interaction, patterns,
+                accessibility, etc.
+              </figcaption>
+            </figure>
           </section>
           <section>
             <div style="display: flex;">
@@ -124,22 +155,193 @@
             ></script>
           </section>
           <section>
-            <a href="https://youtu.be/nQq_gZiZ-jg?t=1421"
-              >How Privilege Defines Performance</a
-            >
+            <blockquote class="twitter-tweet" data-lang="en">
+              <p lang="en" dir="ltr">
+                “HTML by default is accessible. And it is our job as engineers
+                to not screw it up.” PREACH,
+                <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw"
+                  >@MinaMarkham</a
+                >!<a
+                  href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#aeabos</a
+                >
+                <a
+                  href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#a11y</a
+                >
+              </p>
+              &mdash; Sara Soueidan (@SaraSoueidan)
+              <a
+                href="https://twitter.com/SaraSoueidan/status/1125411839125393410?ref_src=twsrc%5Etfw"
+                >May 6, 2019</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>
+              <a href="https://youtu.be/nQq_gZiZ-jg?t=1421"
+                >How Privilege Defines Performance</a
+              >
+            </h2>
+          </section>
+          <section>
+            <table>
+              <caption>
+                Most common types of WCAG 2 failures:
+                <a href="https://webaim.org/projects/million/">Source</a>
+              </caption>
+              <tbody>
+                <tr>
+                  <th>WCAG Failure Type</th>
+                  <th># of home pages</th>
+                  <th>% of home pages</th>
+                </tr>
+                <tr>
+                  <td>Low contrast text</td>
+                  <td>852,868</td>
+                  <td>85.3%</td>
+                </tr>
+                <tr>
+                  <td>Missing alternative text for images</td>
+                  <td>679,964</td>
+                  <td>68%</td>
+                </tr>
+                <tr>
+                  <td>Empty links</td>
+                  <td>581,408</td>
+                  <td>58.1%</td>
+                </tr>
+                <tr>
+                  <td>Missing form input labels</td>
+                  <td>528,482</td>
+                  <td>52.8%</td>
+                </tr>
+                <tr>
+                  <td>Missing document language</td>
+                  <td>329,612</td>
+                  <td>33.1%</td>
+                </tr>
+                <tr>
+                  <td>Empty buttons</td>
+                  <td>250,367</td>
+                  <td>25%</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
             <blockquote>
               "We center the able-bodied and neurotypical experience. We test it
               for ourselves. We don't consider how it affects everyone else."
             </blockquote>
             - <a href="https://twitter.com/TatianaTMac">Tatiana Mac</a>
           </section>
+        </section>
+        <section>
           <section>
-            <a
-              href="https://github.com/marcysutton/empathy-driven-development"
-              target="_blank"
-              >"Empathy Driven Development"</a
-            >
+            <h2>How to improve accessibility?</h2>
+            <p>TL;DR Don't be negligent and have 60 errors per page</p>
           </section>
+          <section>
+            <h2>First: Improve your HTML/CSS Stuff</h2>
+            <ul>
+              <li class="fragment fade-down">
+                Ensure all form inputs have labels
+              </li>
+              <li class="fragment fade-down">
+                &#128248; Ensure there are alt attributes on your images with
+                helpful text (if not decorative)
+              </li>
+              <li class="fragment fade-down">
+                &#128581;&#127996; Don't have empty links or buttons
+              </li>
+              <li class="fragment fade-down">
+                &#127912; Have accessible contrast
+              </li>
+              <li class="fragment fade-down">Have clear focus styling</li>
+            </ul>
+          </section>
+          <section>
+            <h2>To do:</h2>
+            <p>Review the following:</p>
+            <ul>
+              <li class="fragment fade-down">
+                <a href="https://reactjs.org/docs/accessibility.html"
+                  >ReactJS Accessibility Docs</a
+                >
+              </li>
+              <li class="fragment fade-down">
+                <a href="https://webaim.org/standards/wcag/checklist"
+                  >WebAIM's WCAG2 Checlist</a
+                >
+              </li>
+              <li class="fragment fade-down">
+                <a href="https://a11yproject.com/checklist.html"
+                  >A11y Project Checklist</a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Now let's get to javascript</h2>
+          </section>
+          <section>
+            <h2>Modals</h2>
+            <ul>
+              <li class="fragment fade-down">
+                Properly shifting focus to the modal on open
+              </li>
+              <li class="fragment fade-down">
+                "Focus Trapping" - Ensuring that the focus stays in that modal
+                unless you exit
+              </li>
+              <li class="fragment fade-down">
+                Upon close, focus should be moved back to where it was before it
+                moved into the modal.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Accordions</h2>
+            <ul>
+              <li class="fragment fade-down">
+                Using semantic buttons so click events have built in keyboard
+                handling
+              </li>
+              <li class="fragment fade-down">
+                Ensuring to keep all the sections expanded until JavaScript
+                loads.
+              </li>
+              <li class="fragment fade-down">
+                Then add ARIA states (aria-expanded and aria-hidden) in addition
+                to styling styling.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Overall Focus Management</h2>
+            <ul>
+              <li class="fragment fade-down">
+                Making sure the focus isn't going to invisible elements.
+              </li>
+              <li class="fragment fade-down">
+                Making sure to properly navigate keyboard users where they
+                should go.
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h2>With Great Power, comes great responsibility.</h2>
         </section>
       </div>
     </div>
@@ -156,7 +358,8 @@
           { src: "plugin/markdown/markdown.js" },
           { src: "plugin/notes/notes.js", async: true },
           { src: "plugin/highlight/highlight.js", async: true }
-        ]
+        ],
+        hash: true
       });
     </script>
   </body>
