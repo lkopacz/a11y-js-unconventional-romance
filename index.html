@@ -154,34 +154,6 @@
               charset="utf-8"
             ></script>
           </section>
-          <section>
-            <blockquote class="twitter-tweet" data-lang="en">
-              <p lang="en" dir="ltr">
-                “HTML by default is accessible. And it is our job as engineers
-                to not screw it up.” PREACH,
-                <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw"
-                  >@MinaMarkham</a
-                >!<a
-                  href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw"
-                  >#aeabos</a
-                >
-                <a
-                  href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw"
-                  >#a11y</a
-                >
-              </p>
-              &mdash; Sara Soueidan (@SaraSoueidan)
-              <a
-                href="https://twitter.com/SaraSoueidan/status/1125411839125393410?ref_src=twsrc%5Etfw"
-                >May 6, 2019</a
-              >
-            </blockquote>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-          </section>
         </section>
         <section>
           <section>
@@ -250,6 +222,34 @@
             <p>TL;DR Don't be negligent and have 60 errors per page</p>
           </section>
           <section>
+            <blockquote class="twitter-tweet" data-lang="en">
+              <p lang="en" dir="ltr">
+                “HTML by default is accessible. And it is our job as engineers
+                to not screw it up.” PREACH,
+                <a href="https://twitter.com/MinaMarkham?ref_src=twsrc%5Etfw"
+                  >@MinaMarkham</a
+                >!<a
+                  href="https://twitter.com/hashtag/aeabos?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#aeabos</a
+                >
+                <a
+                  href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#a11y</a
+                >
+              </p>
+              &mdash; Sara Soueidan (@SaraSoueidan)
+              <a
+                href="https://twitter.com/SaraSoueidan/status/1125411839125393410?ref_src=twsrc%5Etfw"
+                >May 6, 2019</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </section>
+          <section>
             <h2>First: Improve your HTML/CSS Stuff</h2>
             <ul>
               <li class="fragment fade-down">
@@ -279,7 +279,7 @@
               </li>
               <li class="fragment fade-down">
                 <a href="https://webaim.org/standards/wcag/checklist"
-                  >WebAIM's WCAG2 Checlist</a
+                  >WebAIM's WCAG2 Checklist</a
                 >
               </li>
               <li class="fragment fade-down">
@@ -308,7 +308,16 @@
                 Upon close, focus should be moved back to where it was before it
                 moved into the modal.
               </li>
+              <li class="fragment fade-down">Should close on ESC keypress</li>
             </ul>
+          </section>
+          <section>
+            <a
+              href="http://bit.ly/react-accessible-modal"
+              target="_blank"
+              rel="noopener noreferrer"
+              >http://bit.ly/react-accessible-modal</a
+            >
           </section>
           <section>
             <h2>Accordions</h2>
@@ -322,10 +331,21 @@
                 loads.
               </li>
               <li class="fragment fade-down">
-                Then add ARIA states (aria-expanded and aria-hidden) in addition
-                to styling styling.
+                Then add ARIA expanded and hidden state in addition to styling.
+              </li>
+              <li class="fragment fade-down">
+                Test and ensure that all focusable elements inside the panels
+                are only focusable if they are open.
               </li>
             </ul>
+          </section>
+          <section>
+            <a
+              href="http://bit.ly/accessible-accordion"
+              target="_blank"
+              rel="noopener noreferrer"
+              >http://bit.ly/accessible-accordion</a
+            >
           </section>
           <section>
             <h2>Overall Focus Management</h2>
@@ -338,6 +358,23 @@
                 should go.
               </li>
             </ul>
+          </section>
+          <section>
+            <a
+              href="http://bit.ly/js-a11y-tabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              >http://bit.ly/js-a11y-tabs</a
+            >
+          </section>
+          <section>
+            <h2>Creating integration tests</h2>
+            <a
+              href="http://bit.ly/testing-a11y-react-testing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >http://bit.ly/testing-a11y-react-testing</a
+            >
           </section>
         </section>
         <section>
